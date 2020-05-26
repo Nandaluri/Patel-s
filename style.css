@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/photography-of-gray-sports-car-919073.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: auto;
+  width: 100vw;
+}
+header {
+  color: rgb(230, 230, 230);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 30px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100px;
+}
+header p {
+  font-size: 25px;
+  margin-top: -40px;
+  margin-bottom: -15px;
+}
+.info {
+  position: inline-flex;
+  width: 530px;
+  height: auto;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 45px;
+
+  color: #e8e8e8;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: 80px;
+
+  border: 2px white;
+  list-style-type: none;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 250px;
+  background-color: ivory;
+  align-self: center;
+  background-color: transparent;
+  color: white;
+  font-size: 40px;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-left: 80px;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+#info1 {
+  display: block;
+}
+#info2 {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .info {
+    width: 90vw;
+    align-self: center;
+    margin: 0px;
+  }
+  .button {
+    align-self: center;
+    margin: 0px;
+    margin-top: 30px;
+  }
+  #info2 {
+    margin-left: 35vw;
+  }
+}
+hr {
+  width: 400px;
+}
