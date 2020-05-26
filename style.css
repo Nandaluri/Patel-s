@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    color: transparent;
+  }
+  to {
+    transform: translateX(0);
+    color: white;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(50%);
+    color: transparent;
+  }
+  to {
+    transform: translateX(0);
+    color: white;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -25,6 +46,7 @@ header {
   font-weight: 500;
   font-size: 35px;
   line-height: 100px;
+  animation: 1s ease-out 0s 1 slideIn;
 }
 header p {
   font-size: 25px;
@@ -32,7 +54,6 @@ header p {
   margin-bottom: -15px;
 }
 .info {
-  position: inline-flex;
   width: 530px;
   height: auto;
 
@@ -67,17 +88,23 @@ header p {
   border-radius: 10px;
   border: 2px solid white;
   cursor: pointer;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0s, color 0.3s;
 }
 .button:hover {
   background-color: white;
   color: black;
 }
 #info1 {
+  color: transparent;
   display: block;
+  animation: 1s ease-out 0s 1 slideInRight;
+  animation-fill-mode: forwards;
 }
 #info2 {
   display: none;
+  animation: 1s ease-out 0s 1 slideInRight;
+  animation-fill-mode: forwards;
+  color: transparent;
 }
 @media only screen and (max-width: 600px) {
   .info {

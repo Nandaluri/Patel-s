@@ -6,8 +6,10 @@ button.onclick = function () {
   if (info1.style.display == "none") {
     info1.style.display = "block";
     info2.style.display = "none";
+    button.innerHTML = "Contact Me";
   } else {
     info1.style.display = "none";
     info2.style.display = "block";
+    button.innerHTML = "About";
   }
 };
